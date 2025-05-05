@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    .fade-in { animation: fadeIn 2s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    .formControl {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #E59B23;
+      border-radius: 0.375rem;
+      margin-top: 0.25rem;
+    }
+    .mytextarea1 {
+      width: 100%;
+      height: 100px;
+      padding: 0.5rem;
+      border: 1px solid #E59B23;
+      border-radius: 0.375rem;
+      margin-top: 0.5rem;
+    }
+    .submit {
+      margin-top: 1rem;
+      background-color: #E59B23;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 0.375rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-white text-[#E59B23]">
+
+  <!-- Navigation -->
+  <header class="shadow-md bg-white bg-opacity-90 backdrop-blur-md sticky top-0 z-50">
+    <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-[#E59B23]">Le Chemin du Succès</h1>
+      <button class="md:hidden text-[#E59B23]" onclick="document.getElementById('menu').classList.toggle('hidden')">
+        ☰
+      </button>
+      <ul id="menu" class="hidden w-full md:flex md:w-auto flex-col md:flex-row gap-2 md:gap-4 mt-4 md:mt-0 text-sm sm:text-base">
+        <li><a href="../projetlivre/livre.html" class="hover:text-[#E59B23]">Accueil</a></li>
+        <li><a href="../projetlivre/sommaire.html" class="hover:text-[#E59B23]">Sommaire</a></li>
+        <li><a href="../projetlivre/préface.html" class="hover:text-[#E59B23]">Préface</a></li>
+        <li><a href="../projetlivre/je_suis_perdu.html" class="hover:text-[#E59B23]">Je suis perdu</a></li>
+        <li><a href="../projetlivre/chapitre_1.html" class="hover:text-[#E59B23]">Chapitre 1</a></li>
+        <li><a href="../projetlivre/chapitre_2.html" class="hover:text-[#E59B23]">Chapitre 2</a></li>
+        <li><a href="../projetlivre/chapitre_3.html" class="hover:text-[#E59B23]">Chapitre 3</a></li>
+        <li><a href="../projetlivre/chapitre_4.html" class="hover:text-[#E59B23]">Chapitre 4</a></li>
+        <li><a href="../projetlivre/Conclusion.html" class="hover:text-[#E59B23]">Conclusion</a></li>
+        <li><a href="../projetlivre/contact.html" class="text-[#E59B23] font-semibold">Contact</a></li>
+        <li><a href="../projetlivre/mentio_legal.html" class="hover:text-[#E59B23]">Mentions légales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- ✅ SECTION NOUS CONTACTER DÉPLACÉE EN PREMIER -->
+<section class="container mx-auto py-16 px-4 fade-in">
+  <h2 class="text-3xl font-bold text-center mb-8">Nous contacter</h2>
+  <form id="survey-form" class="max-w-xl mx-auto">
+    <div class="mb-4">
+      <label for="name">Nom et prénom</label>
+      <input id="name" type="text" minlength="2" placeholder="Votre nom et prénom" pattern="^[A-Za-zÀ-ÿ' ]+$" required class="formControl">
+    </div>
+    <div class="mb-4">
+      <label for="email">Adresse e-mail</label>
+      <input id="email" type="email" placeholder="nom@exemple.com" required class="formControl">
+    </div>
+    <div class="mb-4">
+      <label for="phone">Numéro de téléphone</label>
+      <input type="tel" id="phone" name="phone" placeholder="06 23 45 67 89" pattern="^\d{2}\s\d{2}\s\d{2}\s\d{2}\s\d{2}$" class="formControl">
+    </div>
+    <div class="mb-4">
+      <label for="mytext">Votre message</label>
+      <textarea id="mytext" placeholder="Entrez votre message ici..." class="mytextarea1"></textarea>
+    </div>
+    <div class="text-center">
+      <input type="submit" class="submit" value="Envoyer" />
+    </div>
+  </form>
+</section>
+
+<!-- 🔽 SECTION VERS QUI ALLER DÉPLACÉE EN DESSOUS -->
+<section class="container mx-auto py-16 px-4 fade-in text-center">
+  <h2 class="text-3xl font-bold mb-10">Vers qui aller</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+    <a href="https://www.francetravail.fr/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/france-travail-encadre-ccc.png" alt="France Travail" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold">France Travail</p>
+    </a>
+    <a href="https://www.caf.fr/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/image_processing20201116-29267-e5cc2r.jpg" alt="CAF" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold">Allocations Familiales</p>
+    </a>
+    <a href="https://www.centre-valdeloire.fr/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/vdl.png" alt="Centre-Val de Loire" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold">Centre-Val de Loire</p>
+    </a>
+    <a href="https://consultation.avocat.fr/avocats/carte.php?address=Orleans+45000" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/Republique-francaise-logo.svg.png" alt="Avocats Orléans" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold">Les avocats à Orléans</p>
+    </a>
+    <a href="https://openclassrooms.com/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/Capture-decran-2025-04-15-151741.png" alt="OpenClassrooms" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold">OpenClassrooms</p>
+    </a>
+    <a href="https://2000emplois2000sourires.com/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/cropped-2000-icone.png" alt="2000 Emplois, 2000 Sourires" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold text-center">2000 Emplois<br>2000 Sourires</p>
+    </a>
+
+    <a href="travail-emploi.gouv.fr/fonctionnement-de-la-formation-professionnelle/investissement-dans-les-competences" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/logo_inv.webp" alt="investissement-dans-les-competences" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold text-center">Investissement dans les competences</p>
+    </a>
+
+    <a href="https://id-formation.com/" target="_blank" class="hover:scale-105 transition">
+      <img src="../medias/images1/logo_idf.webp" alt="id formation" class="w-32 h-auto mx-auto mb-2">
+      <p class="text-sm font-semibold text-center">Id formation</p>
+    </a>
+
+
+  </div>
+</section>
+
+  <!-- Navigation bas de page -->
+  <div class="mt-12 mb-8 flex justify-between px-4 max-w-5xl mx-auto">
+    <a href="../projetlivre/Conclusion.html"  class="inline-block bg-gray-400 text-white px-6 py-3 rounded-full hover:bg-gray-500 transition">← Conclusion</a>
+    <a href="../projetlivre/livre.html" class="inline-block bg-[#E59B23] text-white px-6 py-3 rounded-full hover:bg-[#cf8517] transition">Accueil →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-[#E59B23]">
+    © 2025 Groupe VISA+PVE ID Formation Fleury-les-Aubrais | Tous droits réservés
+  </footer>
+
+<!-- 🔗 LIEN MENTIONS LÉGALES -->
+<div class="fixed bottom-4 right-4 z-50">
+  <a href="../projetlivre/mentio_legal.html" class="text-xs text-[#E59B23] bg-white bg-opacity-80 px-3 py-1 rounded shadow hover:underline">
+    Mentions légales
+  </a>
+</div>
+
+
+</body>
+</html>
